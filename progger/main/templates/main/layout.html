@@ -10,15 +10,22 @@
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <aside>
-
+        <img src="{% static 'main/img/gears.png' %}" alt="logo">
+        <span class="logo">Реестр оборудования</span>
+        <h3>Навигация</h3>
+        <ul><a href=""><li><i class="fa-solid fa-table"></i> Реестр оборудования</li></a>
+            <a href=""><li><i class="fa-solid fa-folder-plus"></i> Добавить в реестр</li></a>
+            <a href=""><li><i class="fa-solid fa-folder-minus"></i> Удалить из реестра</li></a>
+            <a href=""><li><i class="fa-solid fa-address-card"></i> О проекте</li></a>
+        </ul>
     </aside>
     <main>
-
-    </main>
     {% block content %}
     {% endblock %}
+    </main>
 </body>
 </html>

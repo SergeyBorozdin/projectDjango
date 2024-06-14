@@ -11,5 +11,5 @@
 - from django.http import HttpResponse в views используем как заглушку для проверки работы страниц, после render для отображения шаблонов
 - Для отражения разных стилей подключим к проекту https://getbootstrap.com/ https://www.bootstrapcdn.com/
 - официальная документация по джанго https://docs.djangoproject.com/en/5.0/howto/static-files/
-- 
+- иконки для сайта https://fontawesome.com/, для работы нужно подключить в файле html в данном случае layout
 
