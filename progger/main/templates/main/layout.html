@@ -17,10 +17,10 @@
         <img src="{% static 'main/img/gears.png' %}" alt="logo">
         <span class="logo">Реестр оборудования</span>
         <h3>Навигация</h3>
-        <ul><a href=""><li><i class="fa-solid fa-table"></i> Реестр оборудования</li></a>
-            <a href=""><li><i class="fa-solid fa-folder-plus"></i> Добавить в реестр</li></a>
-            <a href=""><li><i class="fa-solid fa-folder-minus"></i> Удалить из реестра</li></a>
-            <a href=""><li><i class="fa-solid fa-address-card"></i> О проекте</li></a>
+        <ul><a href="{% url 'register' %}"><li><i class="fa-solid fa-table"></i> Реестр</li></a>
+            <a href="{% url 'add_register' %}"><li><i class="fa-solid fa-folder-plus"></i> Добавить в реестр</li></a>
+            <a href="{% url 'delete_register' %}"><li><i class="fa-solid fa-folder-minus"></i> Удалить из реестра</li></a>
+            <a href="{% url 'about' %}"><li><i class="fa-solid fa-address-card"></i> О проекте</li></a>
         </ul>
     </aside>
     <main>
