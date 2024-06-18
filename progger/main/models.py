@@ -3,10 +3,9 @@ from django.db import models
 
 # Create your models here.
 class Equipment(models.Model):
-    title = models.CharField('title', max_length=250)
+    title = models.CharField('Наименование', max_length=250)
     article = models.CharField('Артикул поставщика', max_length=250)
     lm_article = models.CharField('Артикул ЛМ', max_length=250)
-    name = models.CharField('Наименование', max_length=250)
     length = models.IntegerField('Длина')
     width = models.IntegerField('Ширина')
     depth = models.IntegerField('Высота')
