@@ -1,10 +1,12 @@
 from django.shortcuts import render
+from .models import Equipment
 
 
 # Create your views here.
 
 def index(request):
-    return render(request, 'main/index.html')
+    main = Equipment.objects.all()
+    return render(request, 'main/index.html', {'main': main})
 
 
 def about(request):
