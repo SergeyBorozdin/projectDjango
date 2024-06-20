@@ -5,7 +5,7 @@ from .models import Equipment
 # Create your views here.
 
 def index(request):
-    register = Equipment.objects.order_by('-date')
+    register = Equipment.objects.all()
     return render(request, 'main/index.html', {'register': register})
 
 
