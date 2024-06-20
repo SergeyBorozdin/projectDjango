@@ -5,9 +5,17 @@
 {% block content %}
     <div class="features">
         <h1>Реестр оборудования</h1>
-        <p>Заглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстом</p>
-        <button class="btn btn-warning">На страницу "О проекте"</button>
-        {{ main }}
+            {% if register %}
+                {% for el in register %}
+                    <div class="alert alert-warning">
+                    <h3>{{ el.title }}</h3>
+                    <p><p>{{ el.amount }}</p></p>
+                    {{ el.date }}
+                    </div>
+                {% endfor %}
+            {% else %}
+        <p>В реестре нет записей</p>
+        {% endif %}
     </div>
 <!--    {% include 'main/test.html' %}-->
 {% endblock %}

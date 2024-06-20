@@ -15,6 +15,9 @@ class Equipment(models.Model):
     image = models.ImageField(upload_to='equipment_photos/', blank=True, null=True)
     date = models.DateField('Дата')
 
+    #    def __str__(self):
+    #       return self.title
+
     def __str__(self):
         return self.title
 
