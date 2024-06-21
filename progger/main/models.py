@@ -12,7 +12,7 @@ class Equipment(models.Model):
     shop = models.CharField('Магазин', max_length=500)
     amount = models.IntegerField('Количество')
     address = models.CharField('Адрес хранения', max_length=250)
-    image = models.ImageField(upload_to='equipment_photos/', blank=True, null=True)
+    image = models.ImageField(upload_to='image', blank=True, null=True)
     date = models.DateField('Дата')
 
     #    def __str__(self):
