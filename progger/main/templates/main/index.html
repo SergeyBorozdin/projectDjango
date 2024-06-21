@@ -25,25 +25,25 @@
                     </tr>
                 </thead>
                 <tbody>
-                    {% for equipment in equipments %}
+                    {% for record in register %}
                     <tr>
-                        <td>{{ equipment.title }}</td>
-                        <td>{{ equipment.article }}</td>
-                        <td>{{ equipment.lm_article }}</td>
-                        <td>{{ equipment.length }}</td>
-                        <td>{{ equipment.width }}</td>
-                        <td>{{ equipment.depth }}</td>
-                        <td>{{ equipment.shop }}</td>
-                        <td>{{ equipment.amount }}</td>
-                        <td>{{ equipment.address }}</td>
+                        <td>{{ record.title }}</td>
+                        <td>{{ record.article }}</td>
+                        <td>{{ record.lm_article }}</td>
+                        <td>{{ record.length }}</td>
+                        <td>{{ record.width }}</td>
+                        <td>{{ record.depth }}</td>
+                        <td>{{ record.shop }}</td>
+                        <td>{{ record.amount }}</td>
+                        <td>{{ record.address }}</td>
                         <td>
-                            {% if equipment.image %}
+                            {% if record.image %}
                             <img src="{{ equipment.image.url }}" alt="{{ equipment.title }}" width="50" height="50">
                             {% else %}
                             No photo
                             {% endif %}
                         </td>
-                        <td>{{ equipment.date }}</td>
+                        <td>{{ record.date }}</td>
                     </tr>
                     {% endfor %}
                 </tbody>
