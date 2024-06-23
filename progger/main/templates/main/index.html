@@ -38,7 +38,7 @@
                         <td>{{ record.address }}</td>
                         <td>
                             {% if record.image %}
-                            <img src="{{ equipment.image.url }}" alt="{{ equipment.title }}" width="50" height="50">
+                            <img src="{{ record.image.url }}" alt="{{ record.title }}" style="width=50" height="50">
                             {% else %}
                             No photo
                             {% endif %}
