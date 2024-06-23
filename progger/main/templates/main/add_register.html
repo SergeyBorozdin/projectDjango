@@ -4,8 +4,21 @@
 
 {% block content %}
     <div class="features">
-        <h1>Добавить в реестр</h1>
-        <p>Заглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстом</p>
-        <button class="btn btn-success">На страницу "О проекте"</button>
+        <h1>Добавить запись в реестр</h1>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="text" placeholder="Наименование" maxlength="250" class="form-control"><br>
+            <input type="text" placeholder="Артикул поставщика" maxlength="250" class="form-control"><br>
+            <input type="text" placeholder="Артикул ЛМ" maxlength="250" class="form-control"><br>
+            <input type="number" placeholder="Длина" class="form-control"><br>
+            <input type="number" placeholder="Ширина" class="form-control"><br>
+            <input type="number" placeholder="Высота" class="form-control"><br>
+            <input type="text" placeholder="Магазин" maxlength="250" class="form-control"><br>
+            <input type="number" placeholder="Количество" class="form-control"><br>
+            <input type="text" placeholder="Адрес хранения" maxlength="250" class="form-control"><br>
+            <input type="file" placeholder="Фото" class="form-control"><br>
+            <input type="date" placeholder="Дата" class="form-control"><br>
+            <button class="btn btn-success" type="submit">Добавить запись</button>
+        </form>
     </div>
 {% endblock %}

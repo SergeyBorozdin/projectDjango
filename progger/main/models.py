@@ -9,7 +9,7 @@ class Equipment(models.Model):
     length = models.IntegerField('Длина')
     width = models.IntegerField('Ширина')
     depth = models.IntegerField('Высота')
-    shop = models.CharField('Магазин', max_length=500)
+    shop = models.CharField('Магазин', max_length=250)
     amount = models.IntegerField('Количество')
     address = models.CharField('Адрес хранения', max_length=250)
     image = models.ImageField(upload_to='image', blank=True, null=True)
