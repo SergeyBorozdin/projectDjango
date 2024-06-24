@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Equipment
+from .forms import EquipmentForm
 
 
 # Create your views here.
@@ -9,13 +10,21 @@ def index(request):
     return render(request, 'main/index.html', {'register': register})
 
 
-def about(request):
-    return render(request, 'main/about.html')
-
-
 def add_register(request):
-    return render(request, 'main/add_register.html')
+    form = EquipmentForm()
+
+    data = {
+        'form' : form
+    }
+
+    return render(request, 'main/add_register.html', data)
 
 
 def delete_register(request):
     return render(request, 'main/delete_register.html')
+
+
+def about(request):
+    return render(request, 'main/about.html')
+
+

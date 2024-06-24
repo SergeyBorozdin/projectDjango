@@ -7,6 +7,19 @@
         <h1>Добавить запись в реестр</h1>
         <form method="post" enctype="multipart/form-data">
             {% csrf_token %}
+            {{ form }}
+            {{ form.title }}
+            {{ form.article }}
+            {{ form.lm_article }}
+            {{ form.length }}
+            {{ form.width }}
+            {{ form.depth }}
+            {{ form.shop }}
+            {{ form.amount }}
+            {{ form.address }}
+            {{ form.image }}
+            {{ form.date }}
+
             <input type="text" placeholder="Наименование" maxlength="250" class="form-control"><br>
             <input type="text" placeholder="Артикул поставщика" maxlength="250" class="form-control"><br>
             <input type="text" placeholder="Артикул ЛМ" maxlength="250" class="form-control"><br>
