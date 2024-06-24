@@ -2,6 +2,7 @@ from .models import Equipment
 from django.forms import ModelForm, TextInput, DateInput, IntegerField, FileInput
 
 
+
 class EquipmentForm(ModelForm):
     class Meta:
         model = Equipment
