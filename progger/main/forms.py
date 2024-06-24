@@ -1,5 +1,5 @@
 from .models import Equipment
-from django.forms import ModelForm, TextInput, DateInput, IntegerField, FileInput
+from django.forms import ModelForm, TextInput, DateInput, FileInput
 
 
 
@@ -22,15 +22,15 @@ class EquipmentForm(ModelForm):
                 'class': 'form-control',
                 'placeholder': 'Артикул ЛМ'
             }),
-            "length": IntegerField(attrs={
+            "length": TextInput(attrs={
                 'class': 'form-control',
                 'placeholder': 'Длина'
             }),
-            "width": IntegerField(attrs={
+            "width": TextInput(attrs={
                 'class': 'form-control',
                 'placeholder': 'Ширина'
             }),
-            "depth": IntegerField(attrs={
+            "depth": TextInput(attrs={
                 'class': 'form-control',
                 'placeholder': 'Длина'
             }),
@@ -38,7 +38,7 @@ class EquipmentForm(ModelForm):
                 'class': 'form-control',
                 'placeholder': 'Магазин'
             }),
-            "amount": IntegerField(attrs={
+            "amount": TextInput(attrs={
                 'class': 'form-control',
                 'placeholder': 'Количество'
             }),
@@ -52,7 +52,7 @@ class EquipmentForm(ModelForm):
             }),
             "date": DateInput(attrs={
                 'class': 'form-control',
-                'placeholder': 'Фото'
+                'placeholder': 'Дата'
             })
         }
 
