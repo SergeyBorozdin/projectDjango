@@ -1,5 +1,21 @@
 # projectDjango
 
+Реальный инструмент для работы. Реестр обрудования был реализован на excel, была задача развернуть в базу данных с отражением через браузер.
+
+Пример реестра в эксель
+
+![picture](https://github.com/SergeyBorozdin/equipmentRegistry/blob/main/registr%20old.png)
+
+
+Новый реестр
+
+![picture](https://github.com/SergeyBorozdin/equipmentRegistry/blob/main/registr%20new1.png)
+![picture1](https://github.com/SergeyBorozdin/equipmentRegistry/blob/main/registr%20new%202.png)
+![picture2](https://github.com/SergeyBorozdin/equipmentRegistry/blob/main/registr%20new%203.png)
+![picture2](https://github.com/SergeyBorozdin/equipmentRegistry/blob/main/registr%20new%204.png)
+
+
+
 - https://www.youtube.com/watch?v=OYeqcxaYUbQ&list=PLDyJYA6aTY1nZ9fSGcsK4wqeu-xaJksQQ&index=5
 - в папке проекта устанавливаем джанго
 - pip install django
