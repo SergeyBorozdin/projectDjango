@@ -5,7 +5,7 @@
 {% block content %}
     <div class="features">
         <h1>Добавить запись в реестр</h1>
-        <form method="post" >
+        <form method="post" enctype="multipart/image">
             {% csrf_token %}
             {{ form.title }}<br>
             {{ form.article }}<br>
