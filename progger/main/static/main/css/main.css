@@ -1,8 +1,7 @@
 body {
     background: #bdbdbd;
 }
-
-aside {
+nav {
     width: 100%;
     background: #BF8900;
     padding: 10px 0;
@@ -10,45 +9,42 @@ aside {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;}
-
-aside img {
-    width: 80px;
-    float: left;
+    flex-wrap: wrap;
 }
 
-aside .logo {
+/* Логотип и название */
+nav img {
+    height: 50px; /* Измените при необходимости */
+}
+
+nav .logo {
+    font-size: 1.5em;
     margin-left: 10px;
-    font-weight: bold;
-    position: relative;
-    top: 20px;
 }
 
-aside h3 {
-    margin-top: 100px;
-    font-size: 50;
+/* Стили для списка навигации */
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-aside ul {
-    list-style: none;
-}
-
-aside ul a {
+/* Стили для элементов списка */
+nav ul a {
     text-decoration: none;
+    color: #000;
+    margin-right: 20px;
 }
 
-aside ul li{
-    color: #000000;
-    display: block;
-    margin-top: 10px;
-    transition: transform .6s ease
+nav ul li {
+    padding: 10px;
+    background: none; /* Убираем фоновый цвет */
 }
 
-aside ul li:hover, aside ul a:hover{
-    color: #eb5959;
-    text-decoration: none;
-    transform: scale(1.05);
-    text-decoration: none;
+/* Стили для иконок */
+nav ul li i {
+    margin-right: 5px;
 }
 
 main .features {
