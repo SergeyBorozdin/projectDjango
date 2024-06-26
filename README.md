@@ -36,16 +36,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-- Команды 
+- **Команды** 
 - включить сетевое на виндовс
 - python -m venv venv
 -  .\venv\Scripts\activate
