@@ -3,14 +3,14 @@ body {
 }
 
 aside {
-    float: left;
-    background: #1d5e13;
-    width: 20%;
-    padding: 2.5%;
-    height: 100vh;
-    color: #fff;
-    border-right: 5px solid #4d4d4d;
-}
+    width: 100%;
+    background: #BF8900;
+    padding: 10px 0;
+    border-bottom: 5px solid #4d4d4d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;}
 
 aside img {
     width: 80px;
@@ -38,7 +38,7 @@ aside ul a {
 }
 
 aside ul li{
-    color: #fff;
+    color: #000000;
     display: block;
     margin-top: 10px;
     transition: transform .6s ease

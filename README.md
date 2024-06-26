@@ -36,3 +36,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+- Команды 
+- включить сетевое на виндовс
+- python -m venv venv
+-  .\venv\Scripts\activate
+- pip install django
+
+- проверка
+- python -m django --version
+
+- запуск сервера
+- python manage.py runserver

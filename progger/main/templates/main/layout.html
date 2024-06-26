@@ -20,7 +20,7 @@
 
 </head>
 <body>
-    <aside>
+    <nav>
         <img src="{% static 'main/img/gears.png' %}" alt="logo">
         <span class="logo">Реестр оборудования</span>
         <h3>Навигация</h3>
@@ -29,7 +29,7 @@
             <a href="{% url 'delete_register' %}"><li><i class="fa-solid fa-folder-minus"></i> Удалить из реестра</li></a>
             <a href="{% url 'about' %}"><li><i class="fa-solid fa-address-card"></i> О проекте</li></a>
         </ul>
-    </aside>
+    </nav>
     <main>
     {% block content %}
     {% endblock %}
