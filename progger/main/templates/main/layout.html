@@ -21,9 +21,7 @@
 </head>
 <body>
     <nav>
-        <img src="{% static 'main/img/gears.png' %}" alt="logo">
-        <span class="logo">Реестр оборудования</span>
-        <h3>Навигация</h3>
+
         <ul><a href="{% url 'register' %}"><li><i class="fa-solid fa-table"></i> Реестр</li></a>
             <a href="{% url 'add_register' %}"><li><i class="fa-solid fa-folder-plus"></i> Добавить в реестр</li></a>
             <a href="{% url 'delete_register' %}"><li><i class="fa-solid fa-folder-minus"></i> Удалить из реестра</li></a>

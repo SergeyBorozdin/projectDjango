@@ -12,15 +12,6 @@ nav {
     flex-wrap: wrap;
 }
 
-/* Логотип и название */
-nav img {
-    height: 50px; /* Измените при необходимости */
-}
-
-nav .logo {
-    font-size: 1.5em;
-    margin-left: 10px;
-}
 
 /* Стили для списка навигации */
 nav ul {
@@ -52,11 +43,14 @@ main .features {
     color: #black;
     margin-top: 100px;
     text-align: center;
-    width: 75%;
+    width: 100%;
 }
 
 main .features h1 {
-    font-size: 50px;
+    font-size: 25px;
+    float: left;
+    margin-top: -80px;
+    margin-left: 30px;
 }
 
 main .features p {
