@@ -54,7 +54,8 @@ main .features h1 {
 }
 
 main .features p {
-    max-width: 400px; margin: 20px auto;
+    max-width: 1000px;
+    margin: 20px auto;
 }
 
 form {
