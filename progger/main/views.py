@@ -38,9 +38,9 @@ def add_register(request):
     return render(request, 'main/add_register.html', data)
 
 
-def delete_register(request):
+def edit_register(request):
     register = Equipment.objects.all()
-    return render(request, 'main/delete_register.html', {'register': register})
+    return render(request, 'main/edit_register.html', {'register': register})
 
 
 def about(request):
