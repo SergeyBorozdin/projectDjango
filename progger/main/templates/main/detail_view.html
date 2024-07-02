@@ -1,0 +1,20 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Добавить в реестр{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ equipment.title }}</h1>
+        <p>{{ equipment.article }}</p>
+        <p>{{ equipment.lm_article }}</p>
+        <p>{{ equipment.length }}</p>
+        <p>{{ equipment.width }}</p>
+        <p>{{ equipment.depth }}</p>
+        <p>{{ equipment.shop }}</p>
+        <p>{{ equipment.amount }}</p>
+        <p>{{ equipment.address }}</p>
+        <p>{{ equipment.image }}</p>
+        <p>{{ equipment.date }}</p>
+
+    </div>
+{% endblock %}

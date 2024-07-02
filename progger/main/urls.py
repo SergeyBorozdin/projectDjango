@@ -10,6 +10,7 @@ urlpatterns = [
     path('about', views.about, name='about'),
     path('add_register', views.add_register, name='add_register'),
     path('delete_register', views.delete_register, name='delete_register'),
+    path('<int:pk>', views.RegisterRecordView.as_view(), name='record-detail'),
 ]
 
 if settings.DEBUG:

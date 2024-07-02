@@ -1,11 +1,64 @@
 {% extends 'main/layout.html' %}
 
-{% block title %}Удалить из реестра{% endblock %}
+{% block title %}Главная страница{% endblock %}
+
 
 {% block content %}
     <div class="features">
-        <h1>Удалить из реестра</h1>
-        <p>Заглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстомЗаглушка текстом</p>
-        <button class="btn btn-danger">На страницу "О проекте"</button>
+        <h1>Редактировать реестр</h1>
+
+            {% if register %}
+            <table id="equipmentTable" class="display">
+                <thead>
+                    <tr>
+                        <th> </th>
+                        <th>Наименование</th>
+                        <th>Артикул поставщика</th>
+                        <th>Артикул ЛМ</th>
+                        <th>Длина</th>
+                        <th>Ширина</th>
+                        <th>Высота</th>
+                        <th>Магазин</th>
+                        <th>Количество</th>
+                        <th>Адрес хранения</th>
+                        <th>Photo</th>
+                        <th>Дата</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for record in register %}
+                    <tr>
+                        <td><a href="{% url 'record-detail' record.id %}" class="btn btn-warning">Редактировать</a></td>
+                        <td>{{ record.title }}</td>
+                        <td>{{ record.article }}</td>
+                        <td>{{ record.lm_article }}</td>
+                        <td>{{ record.length }}</td>
+                        <td>{{ record.width }}</td>
+                        <td>{{ record.depth }}</td>
+                        <td>{{ record.shop }}</td>
+                        <td>{{ record.amount }}</td>
+                        <td>{{ record.address }}</td>
+                        <td>
+                            {% if record.image %}
+                            <img src="{{ record.image.url }}" alt="{{ record.title }}" style="width=50" height="50">
+                            {% else %}
+                            No photo
+                            {% endif %}
+                        </td>
+                        <td>{{ record.date }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            <script>
+                $(document).ready(function() {
+                    $('#equipmentTable').DataTable();
+                });
+            </script>
+        {% else %}
+        <p>В реестре нет записей</p>
+        {% endif %}
     </div>
+<!--    {% include 'main/test.html' %}-->
 {% endblock %}
