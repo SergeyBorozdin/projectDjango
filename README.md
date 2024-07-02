@@ -15,7 +15,6 @@
 ![picture2](https://github.com/SergeyBorozdin/equipmentRegistry/blob/main/registr%20new%204.png)
 
 
-
 - https://www.youtube.com/watch?v=OYeqcxaYUbQ&list=PLDyJYA6aTY1nZ9fSGcsK4wqeu-xaJksQQ&index=5
 - в папке проекта устанавливаем джанго
 - pip install django
@@ -33,9 +32,6 @@
 - https://www.youtube.com/watch?v=6vVnP02bkQc&t=18s
 
 
-
-
-
 - **Команды** 
 - включить сетевое на виндовс
 - python -m venv venv
@@ -49,9 +45,6 @@
 - python manage.py runserver
 
 
-- Задачи для последующей реализации
-- 2 Добработать что б данные выскакивали из каталога
-
 
 - Цвета  бренда
 - #BF8900 темножелтый
@@ -61,3 +54,4 @@
 - #242c2c темно серый
 - #f0ecd8 молочный
 
+- Комментарии в коде html <!--    {% include 'main/test.html' %}-->
