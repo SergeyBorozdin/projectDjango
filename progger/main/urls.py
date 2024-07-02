@@ -11,6 +11,8 @@ urlpatterns = [
     path('add_register', views.add_register, name='add_register'),
     path('edit_register', views.edit_register, name='edit_register'),
     path('<int:pk>', views.RegisterRecordView.as_view(), name='record-detail'),
+    path('<int:pk>/update', views.RegisterRecordUpdate.as_view(), name='record-update'),
+    path('<int:pk>/delete', views.RegisterRecordDelete.as_view(), name='record-delete'),
 ]
 
 if settings.DEBUG:

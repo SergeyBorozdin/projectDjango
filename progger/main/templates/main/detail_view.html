@@ -5,16 +5,61 @@
 {% block content %}
     <div class="features">
         <h1>{{ equipment.title }}</h1>
-        <p>{{ equipment.article }}</p>
-        <p>{{ equipment.lm_article }}</p>
-        <p>{{ equipment.length }}</p>
-        <p>{{ equipment.width }}</p>
-        <p>{{ equipment.depth }}</p>
-        <p>{{ equipment.shop }}</p>
-        <p>{{ equipment.amount }}</p>
-        <p>{{ equipment.address }}</p>
-        <p>{{ equipment.image }}</p>
-        <p>{{ equipment.date }}</p>
-
+        <a href="{% url 'record-delete' equipment.id %}" class="btn btn-danger">Удалить</a>
+        <a href="{% url 'record-update' equipment.id %}" class="btn btn-info">Редактировать</a>
+        <div class="table-container">
+            <table class="table">
+                <tr>
+                    <th>Наименование</th>
+                    <td>{{ equipment.title }}</td>
+                </tr>
+                <tr>
+                    <th>Артикул поставщика</th>
+                    <td>{{ equipment.article }}</td>
+                </tr>
+                <tr>
+                    <th>Артикул ЛМ</th>
+                    <td>{{ equipment.lm_article }}</td>
+                </tr>
+                <tr>
+                    <th>Длина</th>
+                    <td>{{ equipment.length }}</td>
+                </tr>
+                <tr>
+                    <th>Ширина</th>
+                    <td>{{ equipment.width }}</td>
+                </tr>
+                <tr>
+                    <th>Высота</th>
+                    <td>{{ equipment.depth }}</td>
+                </tr>
+                <tr>
+                    <th>Магазин</th>
+                    <td>{{ equipment.shop }}</td>
+                </tr>
+                <tr>
+                    <th>Количество</th>
+                    <td>{{ equipment.amount }}</td>
+                </tr>
+                <tr>
+                    <th>Адрес хранения</th>
+                    <td>{{ equipment.address }}</td>
+                </tr>
+                <tr>
+                    <th>Фото</th>
+                    <td>
+                        {% if equipment.image %}
+                            <img src="{{ equipment.image.url }}" alt="{{ equipment.title }}" style="width:50px; height:50px;">
+                        {% else %}
+                            No photo
+                        {% endif %}
+                    </td>
+                </tr>
+                <tr>
+                    <th>Дата</th>
+                    <td>{{ equipment.date }}</td>
+                </tr>
+            </table>
+        </div>
     </div>
 {% endblock %}
