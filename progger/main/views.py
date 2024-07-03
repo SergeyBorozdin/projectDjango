@@ -2,9 +2,14 @@ from django.shortcuts import render, redirect
 from .models import Equipment
 from .forms import EquipmentForm
 from django.views.generic import DetailView, UpdateView, DeleteView
+from django.contrib.auth.decorators import login_required, user_passes_test
+
+def superuser_required(view_func):
+    decorated_view_func = login_required(user_passes_test(lambda u: u.is_superuser, login_url='login')(view_func))
+    return decorated_view_func
 
 
-# Create your views here.
+
 
 def index(request):
     register = Equipment.objects.all()

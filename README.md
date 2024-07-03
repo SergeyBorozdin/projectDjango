@@ -80,6 +80,8 @@
 - для настройки Datatables  официальная документация + видео 
 - https://datatables.net/
 - https://www.youtube.com/watch?v=6vVnP02bkQc&t=18s
+- https://skillbox.ru/media/code/yazyk-razmetki-markdown-shpargalka-po-sintaksisu-s-primerami/#stk-6
+
 
 
 #### Цвета  бренда
