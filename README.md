@@ -1,18 +1,31 @@
-# projectDjango
+# Реестр оборудoвания
 
-Реальный инструмент для работы. Реестр обрудования изначально был реализован на excel, была задача сделать инструмент многопользовательским с раздачей прав на редактирование пользователям выборочно. В идеале инструмен для работы через браузер с доступом с любого устройства с через браузер.
+Реальный инструмент для работы. 
+Реестр обрудования изначально был реализован на excel одном из магазинов для учета и хранения обордуования.
+Со временем встала задача сделать инструмент многопользовательским с раздачей прав
+на редактирование супер пользователям, для просмотра всем остальным. 
+Размещение на корпоративном портале, испоьзование с любого устройства.
 
-Пример реестра в эксель
+***"Пример реестра в эксель"***
 
-![picture](https://github.com/SergeyBorozdin/equipmentRegistry/blob/main/registr%20old.png)
+![picture](imageForReadme\table.png)
 
 
-Новый реестр
+***"Новый реестр"***
 
-![picture](https://github.com/SergeyBorozdin/equipmentRegistry/blob/main/registr%20new1.png)
-![picture1](https://github.com/SergeyBorozdin/equipmentRegistry/blob/main/registr%20new%202.png)
-![picture2](https://github.com/SergeyBorozdin/equipmentRegistry/blob/main/registr%20new%203.png)
-![picture2](https://github.com/SergeyBorozdin/equipmentRegistry/blob/main/registr%20new%204.png)
+![picture](imageForReadme/register.png)
+
+
+![picture2](imageForReadme/addRegister.png)
+
+
+![picture1](imageForReadme/editRegister.png)
+
+
+![picture2](imageForReadme/detailView.png)
+
+
+
 
 
 - https://www.youtube.com/watch?v=OYeqcxaYUbQ&list=PLDyJYA6aTY1nZ9fSGcsK4wqeu-xaJksQQ&index=5
