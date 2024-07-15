@@ -8,14 +8,17 @@
 
 ### Реестр в эксель 
 <br>
-Изначально был в облачной версии эксель, кочевал с google на microsoft, дальше на yandex
 
-![picture](imageForReadme\table.png)
+Изначально был в облачной версии эксель, 
+перекочевал с __google__ на __microsoft__, дальше на **yandex** <br>
+
+
+![picture](imageForReadme/table.png)
 
 
 ### Новый реестр 
-База данных на  liteSQL+Python+Django  представляет собой 4 вкладки.<br> 
-<br>**Реестр** - таблица с данными 
+База данных на  __liteSQL+Python+Django__  представляет собой 4 вкладки.<br> 
+<br>**Реестр** - по сути таблица с данными 
 ![picture](imageForReadme/register.png)
 
 **"Добавить в реестр"** - форма для заведения данных в таблицу
@@ -29,20 +32,28 @@
 #### на MAC
 - Клонируем репозиторий
 - в папке проекта устанавливаем джанго 
+
 > **pip install django**
 <br> 
+
 > **python3 manage.py runserver**
+<br>
+
 #### на WINDOWS
 - Необходимо включить сетевое окружение
 - Для этого в переходим в папку проекта и устанавливаем
 > **python -m venv venv**
 <br>
+
 > **.\venv\Scripts\activate**
 <br>
+
 > **pip install django**
 <br>
+
 > **python -m django --version**
 <br>
+
 > **python manage.py runserver**
 
 
@@ -50,10 +61,18 @@
 
 - https://www.youtube.com/watch?v=OYeqcxaYUbQ&list=PLDyJYA6aTY1nZ9fSGcsK4wqeu-xaJksQQ&index=5
 
-> pip install django<br>
-django-admin startproject nameProject<br>
-python3 manage.py runserver <br>
-python3 manage.py startapp nameApp<br> 
+> pip install django
+<br>
+
+> django-admin startproject nameProject
+<br>
+
+> python3 manage.py runserver 
+<br>
+
+> python3 manage.py startapp nameApp
+<br> 
+
 - from django.http import HttpResponse в views используем как заглушку для проверки работы страниц, после render для отображения шаблонов
 - Для отражения разных стилей подключим к проекту https://getbootstrap.com/ https://www.bootstrapcdn.com/
 - официальная документация по джанго https://docs.djangoproject.com/en/5.0/howto/static-files/
@@ -61,6 +80,8 @@ python3 manage.py startapp nameApp<br>
 - для настройки Datatables  официальная документация + видео 
 - https://datatables.net/
 - https://www.youtube.com/watch?v=6vVnP02bkQc&t=18s
+- https://skillbox.ru/media/code/yazyk-razmetki-markdown-shpargalka-po-sintaksisu-s-primerami/#stk-6
+
 
 
 #### Цвета  бренда
