@@ -60,6 +60,9 @@
 ### Справочные материалы
 
 - https://www.youtube.com/watch?v=OYeqcxaYUbQ&list=PLDyJYA6aTY1nZ9fSGcsK4wqeu-xaJksQQ&index=5
+<br>
+- https://www.youtube.com/watch?v=DBU0vQkiJgA&list=PLSWnD6rL-m9adebgpvvOLH5ASGJiznWdg&index=4
+
 
 > pip install django
 <br>
@@ -81,7 +84,7 @@
 - https://datatables.net/
 - https://www.youtube.com/watch?v=6vVnP02bkQc&t=18s
 - https://skillbox.ru/media/code/yazyk-razmetki-markdown-shpargalka-po-sintaksisu-s-primerami/#stk-6
-
+ 
 
 
 
