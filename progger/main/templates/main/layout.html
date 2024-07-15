@@ -24,10 +24,9 @@
                 {% if user.is_authenticated %}
                     <a href="{% url 'add_register' %}"><li><i class="fa-solid fa-folder-plus"></i> Добавить в реестр</li></a>
                     <a href="{% url 'edit_register' %}"><li><i class="fa-solid fa-folder-minus"></i>Редактировать реестр</li></a>
-                    <li><a href="{% url 'logout' %}">Выход</a></li>
-                    <form method="post" action="{% url 'logout' %}">
+                    <li><a href="#" onclick="document.getElementById('logout-form').submit();">Выход</a></li>
+                    <form id="logout-form" method="post" action="{% url 'logout' %}" style="display: none;">
                         {% csrf_token %}
-                        <button type="submit" class="btn btn-link" style="display: inline; padding: 0;">Выход</button>
                     </form>
                 {% else %}
                     <li><a href="{% url 'login' %}">Вход</a></li>
