@@ -29,7 +29,6 @@
                         {% csrf_token %}
                         <button type="submit" class="btn btn-link" style="display: inline; padding: 0;">Выход</button>
                     </form>
-
                 {% else %}
                     <li><a href="{% url 'login' %}">Вход</a></li>
                     <li><a href="{% url 'register_user' %}">Регистрация</a></li>
